@@ -59,10 +59,6 @@ module.exports = env => {
           test: /\.(glsl|frag|vert|vs|fs)$/,
           loader: 'glslify-loader',
           exclude: /node_modules/
-        },
-        {
-          test: /\.json$/,
-          loader: 'json-loader'
         }
       ]
     },
