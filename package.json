@@ -1,0 +1,46 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run dev",
+    "dev": "webpack-dev-server --progress --colors --env.NODE_ENV=development",
+    "prod": "webpack --progress --colors --env.NODE_ENV=production",
+    "pushall": "git add --all . && git commit -m \"update\" && git push",
+    "ncu": "npm-check-updates"
+  },
+  "dependencies": {
+    "glslify": "^6.1.1",
+    "glslify-loader": "^1.0.2",
+    "modernizr-loader": "^1.0.1",
+    "npm-check-updates": "^2.14.2",
+    "optimize-css-assets-webpack-plugin": "^4.0.1",
+    "raw-loader": "^0.5.1",
+    "react-hot-loader": "^4.2.0",
+    "uglifyjs-webpack-plugin": "^1.2.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  }
+}
